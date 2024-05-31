@@ -38,20 +38,19 @@ Result is a categorical variable, sex is categorical.
 
 Result depends on sex, we use helper file cat~cat  
 
-
-## Graphical results - use ggplot commands to do this  
-
-
-Variables for this study are sex and result.  
-
-We want to know if result depends on Sex  
-result is a categorical variable.
-Sex is also a categorical variable 
-
-So we use Cat ~ Cat helper file 
-
 #Results
+
+
 ## Graphical results - use ggplot commands to do this 
+
+```{r}
+barchartGC(~result + Sex,data=kRdata)
+barchartGC(~result + Sex,data=kRdata, type="percent")
+
+```
+
+This bar chart shows that there's more death in males than females. 
+
 ## Numerical results
 
 
